@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+input, button {
+  font-family: inherit;
+}
+
+.container {
+  width: 1330px;
+  margin: 0 auto;
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+.headline .right i {
+  margin-left: 35px;
+}
+
+.header {
+  background: #003F62;
+  padding: 22px 0;
+}
+.header section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 85px;
+}
+.header section .menu-bar {
+  flex-grow: 1;
+  text-align: right;
+  color: #fff;
+}
+.header section .menu-bar a {
+  display: inline-block;
+  margin-left: 30px;
+}
+.header section .menu-bar a i {
+  font-size: 16px;
+}
+.header section .menu-bar a span {
+  display: inline-block;
+  padding: 0 6px;
+  border-radius: 50px;
+  background: #EDA415;
+  margin-right: 12px;
+}
+.header section .search {
+  width: 438px;
+  position: relative;
+}
+.header section .search button {
+  background: #EDA415;
+  border: none;
+  color: #fff;
+  height: 56px;
+  border-radius: 20px;
+  padding: 0 40px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+.header section .search input {
+  width: 100%;
+  height: 56px;
+  border-radius: 20px;
+  border: none;
+  padding-left: 25px;
+}
+.header section .search input::placeholder {
+  color: #292D32;
+}
+
+.menu {
+  background: #F4F4F4;
+  font-size: 16px;
+  margin: 0 auto;
+}
+.menu section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu section .left {
+  background: #EDA415;
+  padding: 23px 15px;
+  color: #fff;
+}
+.menu section .left i {
+  margin-left: 15px;
+}
+.menu section .right {
+  text-align: right;
+  color: #003F62;
+  font-weight: 700;
+}
+.menu section .center ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+}
+.menu section .center ul li {
+  list-style: none;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px;
+}
+.title i {
+  margin: 10px;
+}
+
+.sanpham {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "h1 h1 h1 h2";
+  margin-top: 20px;
+}
+.sanpham .item {
+  grid-area: h1;
+  padding: 10px 15px;
+  background-color: #E2F4FF;
+  margin: 0 20px;
+}
+.sanpham .item ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+}
+.sanpham .item ul li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.sanpham .right {
+  padding: 10px 15px;
+  background-color: #E2F4FF;
+  grid-area: h2;
+  text-align: center;
+}
+.sanpham .right p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.method {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "h1 h1 h1 h2";
+}
+.method .image {
+  grid-area: h1;
+}
+.method .title {
+  grid-area: h2;
+}
+.method .title p {
+  margin-top: 27px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #232323;
+}
+.method .title p span {
+  float: right;
+}
+.method .title hr {
+  margin: 20px 0;
+}
+.method .title h1 {
+  padding: 14px 23px;
+  border: 1px solid #DFDFDF;
+  border-radius: 20px;
+}
+.method .title h1 span {
+  float: right;
+}
+.method .title h2 {
+  padding: 14px 23px;
+  border: 1px solid #DFDFDF;
+  border-radius: 20px;
+}
+.method .title h2 i {
+  float: right;
+}
+.method .title h3 {
+  font-size: 16px;
+  margin: 20px 0;
+}
+.method .title h3 span {
+  float: right;
+}
+.method .title a {
+  display: inline-block;
+  padding: 10px 40px;
+  border: 1px solid;
+  border-radius: 32px;
+  background-color: #EDA415;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #E2F4FF;
+  padding: 80px;
+}
+.footer .caller {
+  background-color: #fff;
+  padding: 30px 0;
+  border-radius: 20px;
+}
+.footer .caller .result section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .caller .result section .title h1 {
+  font-size: 29px;
+  font-weight: 700;
+  color: #1B5A7D;
+}
+.footer .caller .result section .search {
+  width: 388px;
+  position: relative;
+  margin-top: 20px;
+}
+.footer .caller .result section .search input {
+  width: 100%;
+  background-color: #EDA415;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding-left: 25px;
+}
+.footer .caller .result section .search input::placeholder {
+  color: #fff;
+}
+.footer .caller .result section .search button i {
+  position: absolute;
+  height: 30px;
+  padding: 14px;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+}
+.footer .finally {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .finally p {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.footer .finally .left p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1B5A7D;
+}
+.footer .finally .left ul li {
+  font-size: 19px;
+  color: #1B5A7D;
+  margin: 5px 0;
+}
+.footer .finally .center p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1B5A7D;
+}
+.footer .finally .center ul li {
+  font-size: 19px;
+  color: #1B5A7D;
+  margin: 5px 0;
+}
+.footer .finally .right p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1B5A7D;
+}
+.footer .finally .right ul li {
+  font-size: 19px;
+  color: #1B5A7D;
+  margin: 5px 0;
+}
+
+/*# sourceMappingURL=style3.css.map */
